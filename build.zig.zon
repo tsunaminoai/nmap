@@ -1,0 +1,31 @@
+.{
+    .name = "nmap",
+    .version = "7.94.0",
+
+    .dependencies = .{
+        .libz = .{
+            .url = "https://github.com/andrewrk/libz/archive/8bf2a1c61b87773131bee2086737b5f02b7c0888.tar.gz",
+            .hash = "12209e851f7e2c6ba2f01de3e11b1771f03e49666065320abd8414aac152bfa75fae",
+        },
+
+        .libmp3lame = .{
+            .url = "https://github.com/andrewrk/libmp3lame/archive/cb974f77c36ab0a4178959a51661a0b68d6d5e2b.tar.gz",
+            .hash = "122068be11cd3aeb0a2af8e676e422b9e98176c44f67cbb603ad088c8f80b6776d3b",
+        },
+        .libvorbis = .{
+            .url = "https://github.com/andrewrk/libvorbis/archive/c38446870a06a819df1928208fc57cba0f650063.tar.gz",
+            .hash = "12209c5c047c81c9a229c0a2a7fde89c8ae36bc3f078d92a0999a5aaf24f9c0ee715",
+        },
+        .libogg = .{
+            .url = "https://github.com/andrewrk/libogg/archive/0d8ad1d0547de5025e41bc949cf0e2113120d9ec.tar.gz",
+            .hash = "1220c358dd6440e1b169222a7fcfa9f525d1c6bbd376cc4c7bc8d9a925235c9db55c",
+        },
+
+        // This is used to compile some assembly files into object files for x86.
+        // Without this, ffmpeg considers the build "crippled".
+        .nasm = .{
+            .url = "https://github.com/andrewrk/nasm/archive/212e09aa3e55f6f2ae5581b2a1c98254b91d4781.tar.gz",
+            .hash = "1220bed45a611c2a129858a848d2081c1db637c748dc2470000006eb31f8392ce7b9",
+        },
+    },
+}
